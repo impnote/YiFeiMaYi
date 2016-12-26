@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(path = "/test")
 public class HelloWorldController {
 
-    @RequestMapping(path = "/demo")
-    public String sayHello() {
-        return "index";
-    }
+//    @RequestMapping(path = "/demo")
+//    public String sayHello() {
+//        return "index";
+//    }
 
 
 }
