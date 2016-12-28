@@ -8,3 +8,4 @@
 0:0:0:0:0:0:0:1 - - [29/Dec/2016:00:16:32 +0800] "GET /static/images/slider/bg2.jpg HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [29/Dec/2016:00:16:32 +0800] "GET /static/images/slider/bg1.jpg HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [29/Dec/2016:00:16:32 +0800] "GET /static/images/slider/bg3.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Dec/2016:00:16:40 +0800] "GET / HTTP/1.1" 200 47627
