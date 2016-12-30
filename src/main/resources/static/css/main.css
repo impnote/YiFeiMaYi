@@ -108,6 +108,7 @@ a:focus {
 .dropdown-menu {
   margin-top: -1px;
   min-width: 180px;
+  text-align: center;
 }
 
 .center h2{
@@ -125,7 +126,7 @@ a:focus {
 }
 
 body > section {
-  padding: 70px 0;
+  padding: 0 0 70px;
 }
 
 .center {
@@ -193,7 +194,7 @@ body > section {
 }
 
 .top-bar {
-  padding: 10px 0;
+  padding: 3px 0;
   background: #83ba1e;
   border-bottom: 1px solid #8ec220;
   line-height: 28px;
@@ -204,11 +205,12 @@ body > section {
 }
 
 .top-number p{
-  margin: 0
+  margin: 0;
+  text-align: right;
 }
 
 .social{
-  text-align: right;
+  text-align: left;
 }
 
 .social-share{
@@ -276,8 +278,8 @@ input.search-form:hover {
   border-radius: 0;
   margin-bottom: 0;
   background: #83ba1e;
-  padding: 15px 0;
-  padding-bottom: 0;
+  padding: 0 0;
+  /*padding-bottom: 0;*/
 }
 
  .navbar-nav{
@@ -286,7 +288,7 @@ input.search-form:hover {
 
 .navbar-nav>li{
   margin-left: 35px;
-  padding-bottom: 28px;
+  padding-bottom: 14px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -420,7 +422,7 @@ input.search-form:hover {
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 730px;
+  height: 550px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
