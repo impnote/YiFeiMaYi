@@ -132,6 +132,7 @@ body > section {
 .center {
   text-align: center;
   padding-bottom: 55px;
+  padding-top: 55px;
 }
 
 .scaleIn {
@@ -194,14 +195,14 @@ body > section {
 }
 
 .top-bar {
-  padding: 3px 0;
-  background: #83ba1e;
-  border-bottom: 1px solid #8ec220;
+  padding: 0 0;
+  background: white;
+  border-bottom: 1px solid whitesmoke;
   line-height: 28px;
 }
 
 .top-number{
-  color: #fff;
+  color: black;
 }
 
 .top-number p{
@@ -277,7 +278,7 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: #83ba1e;
+  background: white;
   padding: 0 0;
   /*padding-bottom: 0;*/
 }
@@ -292,17 +293,17 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  padding: 5px 12px;
+  padding: 0px 5px;
   margin: 0;
   border-radius: 3px;
-  color: #fff;
+  color: black;
   line-height: 24px;
   display: inline-block;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
-	background-color: #fff;
-  color: black;
+	background-color: #83ba1e;
+  color: white;
 }
 
 .navbar-inverse {
@@ -321,8 +322,8 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #fff;
-  color: black;
+  background-color: #83ba1e;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu {
@@ -351,8 +352,8 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-  background-color: #fff;
-  color: black;
+  background-color: #83ba1e;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
