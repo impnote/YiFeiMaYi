@@ -22,13 +22,31 @@ jQuery(function($) {'use strict',
 
 	// portfolio filter
 	$(window).load(function(){'use strict';
+		var $portfolio_selectors = $('.nav.nav-tabs-justified > li > a');
+		// var $portfolio = $('.portfolio-items');
+		// $portfolio.isotope({
+		// 	itemSelector : '.portfolio-item',
+		// 	layoutMode : 'fitRows'
+		// });
+		
+		$portfolio_selectors.on('click', function(){
+			$portfolio_selectors.removeClass('active');
+			$(this).addClass('active');
+			var selector = $(this).attr('href');
+			$portfolio.isotope({ filter: selector });
+			return false;
+		});
+	});
+
+	//myTab
+	$(window).load(function(){'use strict';
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
 		var $portfolio = $('.portfolio-items');
 		$portfolio.isotope({
 			itemSelector : '.portfolio-item',
 			layoutMode : 'fitRows'
 		});
-		
+
 		$portfolio_selectors.on('click', function(){
 			$portfolio_selectors.removeClass('active');
 			$(this).addClass('active');
