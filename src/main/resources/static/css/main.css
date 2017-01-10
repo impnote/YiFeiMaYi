@@ -301,7 +301,9 @@ input.search-form:hover {
   display: inline-block;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover{
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a.active
+{
 	background-color: #83ba1e;
   color: white;
 }
