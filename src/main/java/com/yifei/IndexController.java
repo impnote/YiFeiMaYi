@@ -13,10 +13,10 @@ public class IndexController {
     public String index() {
         return "index";
     }
-    @RequestMapping("/contact")
-    public String contact() {
-        return "contact-us";
-    }
+//    @RequestMapping("/contact")
+//    public String contact() {
+//        return "contact-us";
+//    }
     @RequestMapping("/about")
     public String about() {
         return "about-us";

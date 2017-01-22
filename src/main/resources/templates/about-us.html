@@ -6,10 +6,97 @@
     <title>关于我们</title>
 </head>
 <body>
-<section layout:fragment="content">
-    <div>
 
+<section layout:fragment="content">
+    <na class="nav navbar-fixed-top">
+        <header id="header">
+            <div class="top-bar ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <a class="navbar-brand" href="/"  style="padding: 9px 0 0"><img src="../static/images/logo5.png" alt="logo"></a>
+
+                            <a class="navbar-brand" href="/" style="padding: 8px 0 0"><img src="../static/images/wenzi30.png" alt="logo"></a>
+
+                        </div>
+                        <div class="col-sm-4 col-xs-10">
+                            <div class="top-number  right" ><p><i class="fa fa-phone-square "></i>  400 633 2558</p></div>
+                        </div>
+                    </div><!--/.row-->
+                </div><!--/.container-->
+            </div><!--/.top-bar-->
+
+            <nav class="navbar navbar-inverse "  role="banner" id="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><img src="../static/images/wenzi500.png" alt="logo" style="vertical-align: baseline"></a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="nav-btn" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a class="" href="/">首页</a></li>
+                            <li class="disabled"><a href="#">新闻资讯</a></li>
+                            <li class="disabled"><a href="#">常见问题</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">下载蚂蚁爱车APP <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <img src="../static/images/erweima.png">
+                                    </li>
+                                    <!--<li><a href="#">iOS二维码</a></li>-->
+                                    <!--<li><a href="#">微信公众号二维码</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="disabled"><a href="#">关于招商</a></li>
+                            <li class="active"><a href="/about">关于我们</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.container-->
+            </nav><!--/nav-->
+
+        </header><!--/header-->
+    </na>
+<div>
+    <div class="container" id="intro" >
+        <div class="row">
+            <div class="col-lg-3 col-sm-2 col-xs-3" id="about-us">
+                <ul class="nav nav-pills nav-stacked " role="tablist">
+                    <li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab">企业简介</a></li>
+                    <li role="presentation"><a href="#2" role="tab" data-toggle="tab">企业文化</a></li>
+                    <li role="presentation"><a href="#3" role="tab" data-toggle="tab">企业产品</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9 col-sm-10 col-xs-9" style="padding-top: 50px">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="1">
+                        <h2>翼飞汽车科技江苏有限公司成立于2016年7月，总部位于世界紫砂之乡美丽的陶都---宜兴。</h2>
+                        <h3>公司自主研发的系列汽车洗护产品，获得了多项国家发明专利，填补了无水洗车领域的多项空白；
+                            每洗一辆车仅需<strong>500毫升</strong>洗车液，无需一滴水，为国家节约宝贵的水资源做出了巨大贡献。</h3>
+                        <h3>公司坚持科学发展观，走可持续发展道路；依托“互联网+科技产品+优质服务”的模式，不断自主创新，
+                            致力于打造一个绿色的汽车后市场服务平台。</h3>
+                        <h3>我们秉承（公司、员工、会员）一家亲的“心”服务理念， 为用户提供优质服务，并积极承担社会责任；
+                            预计未来三年内为社会提供<strong>3000个以上</strong>的就业岗位，我们肩负着引领汽车后市场走向绿色健康的发展使命，
+                            为保护绿色地球贡献一点绵薄之力！</h3>
+                    </div>
+                    <div role="tabpanel" class="tab-pane " id="2" >
+                        <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业内涵：品茶道、论车道、推行节能环保。</span></ol>
+                        <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业使命：引领汽车后市场走向绿色健康的发展方向。</span></ol>
+                        <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业宗旨：服务、优质服务、贴心优质服务。</span></ol>
+                        <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业理念：爱车、爱人、爱生活。</span></ol>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane " id="3"></div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 </section>
 
 </body>

@@ -23,12 +23,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../static/images/ico/apple-touch-icon-57-precomposed.png">
-    <style type="text/css">
-        /*#nav-btn li a:hover{color: black;background-color: white;}*/
-        /*#nav-btn li a:visited{color: black;background-color: white;}*/
-        /*#nav-btn li a:link{color: black;background-color: white;}*/
-        /*#nav-btn li a:active{color: black;background-color: white;}*/
-    </style>
 </head><!--/head-->
 
 <body class="homepage">
@@ -44,18 +38,10 @@
                         <div class="top-number col-sm-10 col-xs-10 " ><p><i class="fa fa-phone-square "></i>  400 800 8820</p></div>
                         <div class="social col-sm-2 col-xs-2 ">
                             <ul class="social-share">
-                                <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-                                <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-                                <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-                                <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+
                                 <li><a href="#"><i class="fa fa-weibo"></i></a></li>
                             </ul>
-                            <!--<div class="search">-->
-                            <!--<form role="form">-->
-                            <!--<input type="text" class="search-form" autocomplete="off" placeholder="Search">-->
-                            <!--<i class="fa fa-search"></i>-->
-                            <!--</form>-->
-                            <!--</div>-->
+
                         </div>
                     </div>
                 </div><!--/.row-->
@@ -130,7 +116,56 @@
     </div>
 </footer><!--/#footer-->
 
+<div class="container" id="intro" >
+    <div class="row">
+        <div class="col-lg-3 col-sm-2 col-xs-3" id="about-us">
+            <ul class="nav nav-pills nav-stacked " role="tablist">
+            <li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab">企业简介</a></li>
+            <li role="presentation"><a href="#2" role="tab" data-toggle="tab">企业文化</a></li>
+            <li role="presentation"><a href="#3" role="tab" data-toggle="tab">企业产品</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-9 col-sm-10 col-xs-9" style="padding-top: 50px">
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="1">
+                    <h2>翼飞汽车科技江苏有限公司成立于2016年7月，总部位于世界紫砂之乡美丽的陶都---宜兴。</h2>
+                    <h3>公司自主研发的系列汽车洗护产品，获得了多项国家发明专利，填补了无水洗车领域的多项空白；
+                        每洗一辆车仅需<strong>500毫升</strong>洗车液，无需一滴水，为国家节约宝贵的水资源做出了巨大贡献。</h3>
+                    <h3>公司坚持科学发展观，走可持续发展道路；依托“互联网+科技产品+优质服务”的模式，不断自主创新，
+                        致力于打造一个绿色的汽车后市场服务平台。</h3>
+                    <h3>我们秉承（公司、员工、会员）一家亲的“心”服务理念， 为用户提供优质服务，并积极承担社会责任；
+                        预计未来三年内为社会提供<strong>3000个以上</strong>的就业岗位，我们肩负着引领汽车后市场走向绿色健康的发展使命，
+                        为保护绿色地球贡献一点绵薄之力！</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane " id="2" >
+                    <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业内涵：品茶道、论车道、推行节能环保。</span></ol>
+                    <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业使命：引领汽车后市场走向绿色健康的发展方向。</span></ol>
+                    <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业宗旨：服务、优质服务、贴心优质服务。</span></ol>
+                    <ol><span class="glyphicon glyphicon-chevron-right" style="text-align: center;font-size: 20px">企业理念：爱车、爱人、爱生活。</span></ol>
+
+                </div>
+                <div role="tabpanel" class="tab-pane " id="3"></div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="../static/js/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        SidebarTabHandler.Init();
+    });
+    var SidebarTabHandler={
+        Init:function(){
+            $(".tabItemContainer>li").click(function(){
+                $(".tabItemContainer>li>a").removeClass("tabItemCurrent active");
+                $(".tabBodyItem").removeClass("tabBodyCurrent");
+                $(this).find("a").addClass("tabItemCurrent active");
+                $($(".tabBodyItem")[$(this).index()]).addClass("tabBodyCurrent");
+            });
+        }
+    }
+</script>
 <script src="../static/js/bootstrap.min.js"></script>
 <script src="../static/js/jquery.prettyPhoto.js"></script>
 <script src="../static/js/jquery.isotope.min.js"></script>
